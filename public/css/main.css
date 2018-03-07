@@ -75,11 +75,11 @@ h3 {
   margin: 0 auto;
   color: #1587AC; }
 
-.fa-rocket, .fa-shield-alt {
-  font-size: 4em;
-  clear: both;
-  padding-bottom: 20px;
-  margin: 0 auto; }
+.fa-home {
+  font-size: 2em;
+  padding-left: 15px;
+  padding-top: 15px;
+  color: white; }
 
 #profiles {
   background: red;
@@ -96,6 +96,11 @@ h3 {
   #profiles .profile2 {
     float: right;
     padding-left: 10px; }
+  #profiles .fa-rocket, #profiles .fa-shield-alt {
+    font-size: 4em;
+    clear: both;
+    padding-bottom: 20px;
+    margin: 0 auto; }
 
 #bottom-stars {
   padding-top: 150px; }

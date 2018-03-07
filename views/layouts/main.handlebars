@@ -6,6 +6,71 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <link rel="stylesheet" href="css/main.css">
+  {{#if kids}}
+      <link rel="stylesheet" href="/css/kids.css">
+  {{/if}}
+
+  <title>{{ title }}</title>
+</head>
+
+<header>
+      <img src="images/header.jpg" alt="header image" id="header-img">
+    {{#if kids}}
+          <img src="images/header-kids.jpg" alt="header image" id="header-img">
+    {{/if}}
+    <a href="/">
+      <i class="fa fa-home"></i>
+    </a>
+
+    {{#if adults}}
+        <a href="/kids">
+          <i class="fas fa-rocket"></i>
+        </a>
+    {{/if}}
+</header>
+      <div id="admin-container">
+
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+
+  {{{ body }}}
+
+
+  <footer>
+  <div class="bottom-stars">
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+    <i class="far fa-star"></i>
+  </div>
+  </div>
+
+  <!-- <div class="footer-img"></div> -->
+  <img src="images/footer.jpg" alt="footer image" id="footer-img">
+  {{#if kids}}
+        <img src="images/footer-kids.jpg" alt="footer image" id="footer-img-k">
+  {{/if}}
+  </footer>
+  <script src="javascripts/main.js"></script>
+
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" href="css/main.css">
   {{#if kidsmode}}
       <link rel="stylesheet" href="stylesheets/kids.css">
   {{/if}}
@@ -15,18 +80,32 @@
 
 <header>
     <img src="images/header.jpg" alt="header image" id="header-img">
-    <div id="admin-container">
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
-    <i class="far fa-star"></i>
 </header>
+      <div id="admin-container">
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
+      <i class="far fa-star"></i>
 
 
-  {{{ body }}}
+<h2>Hello, this is home page</h2>
+<h3>Choose your profile:</h3>
+<br><br>
+<a href="/getData" class="get-posts">Get Movies</a>
+<div id="profiles">
+<div class="profile">
+  <i class="fas fa-shield-alt"></i>
+  <a href="/adults" class="button">Adults</a>
+</div>
+<div class="profile2">
+  <i class="fas fa-rocket"></i>
+  <a href="/kids" class="button">Kids</a>
+</div>
+</div>
+
 
 
   <footer>
@@ -45,4 +124,4 @@
   </footer>
   <script src="javascripts/main.js"></script>
 
-</html>
+</html> -->
