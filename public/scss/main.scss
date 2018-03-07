@@ -6,6 +6,20 @@ body
   background-color: #212629;
    // background-color: red;
   color: white;
+
+}
+#container{
+  margin: 0 auto;
+  max-width: 1420px;
+  overflow: hidden;
+  // background: purple;
+  clear: both;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 45px;
 }
 
 h2 {
@@ -23,14 +37,16 @@ h3{
 #admin-container
 {
   margin: 0 auto;
-  border: 3px solid #1587AC;
+  // border: 3px solid #1587AC;
   border-radius: 6px;
   width: 50%;
-  height: 85%;
-  margin-top: 3%;
+  // height: 85%;
+  // margin-top: 3%;
   padding: 15px;
   text-align: center;
 }
+
+
 
 .button {
   color: white;
@@ -91,38 +107,105 @@ h3{
   color: white;
 }
 
-
-
-#profiles
-{
-  background: red;
-  clear: both;
-  width: 180px;
-  margin-bottom: 100px;
-  // height: 100px;
+.home-container{
+  height: 100%;
+  width: 50%;
+  // margin-top: 3%;
+  border: 3px solid #1587AC;
+  text-align: center;
   margin: 0 auto;
-  .profile, .profile2{
-    width: 75px;
-    height: 150px;
-  }
-  .profile{
-  float:left;
-  padding-right: 10px;
-  }
-  .profile2{
-    float: right;
-    padding-left: 10px;
-  }
-  .fa-rocket, .fa-shield-alt,
+  #profiles
   {
-    font-size: 4em;
+    // background: red;
     clear: both;
-    padding-bottom: 20px;
+    width: 180px;
+    margin-bottom: 100px;
+    // height: 100px;
     margin: 0 auto;
-    // text-align: center;
+    padding-bottom: 150px;
+    .profile, .profile2{
+      width: 75px;
+      height: 150px;
+    }
+    .profile{
+    float:left;
+    padding-right: 10px;
+    }
+    .profile2{
+      float: right;
+      padding-left: 10px;
+    }
+    .fa-rocket, .fa-shield-alt,
+    {
+      font-size: 4em;
+      clear: both;
+      padding-bottom: 20px;
+      margin: 0 auto;
+      // text-align: center;
+    }
   }
 }
 
+
+
 #bottom-stars{
   padding-top: 150px;
+  clear: both;
+}
+
+.gen-container{
+  margin: 0 auto;
+  max-width: 1420px;
+  overflow: hidden;
+  clear: both;
+}
+.movie-box
+{
+  float: left;
+  margin-left: 35px;
+  width: 200px;
+margin-top: 25px;
+  img{
+    height: 270px;
+    width: 190px;
+  }
+  h2{
+    color: #1587AC;
+    font-size: 14px;
+    text-align: left;
+    padding: 5px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+  }
+  h3{
+    color: #1587AC;
+    padding: 5px;
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+  }
+  h4{
+    padding: 5px;
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+  }
+  p{
+    font-family: 'Quicksand';
+    font-size: 10px;
+    padding: 5px;
+  }
+  .fa-star{
+    font-size: 0.8em;
+    margin-right: 5px;
+    padding: 0;
+  }
+  .year{
+    color: white;
+    font-size: 11px;
+    // margin-left: 20px;
+    float: right;
+    padding-right: 10px;
+  }
+
 }

@@ -25,13 +25,11 @@ var toRender = (config.kidsmode) ? 'kids' : 'main ';
 router.get('/', (req, res) => {
   console.log('hit the home route');
   res.render('home');
-  kids : false
 });
 
 router.get('/adults', (req, res) => {
   console.log('hit the adults route');
   res.render('adults');
-  kids : false
 });
 
 router.get('/kids', (req, res) => {

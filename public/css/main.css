@@ -3,6 +3,17 @@ body {
   background-color: #212629;
   color: white; }
 
+#container {
+  margin: 0 auto;
+  max-width: 1420px;
+  overflow: hidden;
+  clear: both; }
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 45px; }
+
 h2 {
   font-size: 24px;
   text-align: center;
@@ -15,11 +26,8 @@ h3 {
 
 #admin-container {
   margin: 0 auto;
-  border: 3px solid #1587AC;
   border-radius: 6px;
   width: 50%;
-  height: 85%;
-  margin-top: 3%;
   padding: 15px;
   text-align: center; }
 
@@ -81,28 +89,81 @@ h3 {
   padding-top: 15px;
   color: white; }
 
-#profiles {
-  background: red;
-  clear: both;
-  width: 180px;
-  margin-bottom: 100px;
+.home-container {
+  height: 100%;
+  width: 50%;
+  border: 3px solid #1587AC;
+  text-align: center;
   margin: 0 auto; }
-  #profiles .profile, #profiles .profile2 {
-    width: 75px;
-    height: 150px; }
-  #profiles .profile {
-    float: left;
-    padding-right: 10px; }
-  #profiles .profile2 {
-    float: right;
-    padding-left: 10px; }
-  #profiles .fa-rocket, #profiles .fa-shield-alt {
-    font-size: 4em;
+  .home-container #profiles {
     clear: both;
-    padding-bottom: 20px;
-    margin: 0 auto; }
+    width: 180px;
+    margin-bottom: 100px;
+    margin: 0 auto;
+    padding-bottom: 150px; }
+    .home-container #profiles .profile, .home-container #profiles .profile2 {
+      width: 75px;
+      height: 150px; }
+    .home-container #profiles .profile {
+      float: left;
+      padding-right: 10px; }
+    .home-container #profiles .profile2 {
+      float: right;
+      padding-left: 10px; }
+    .home-container #profiles .fa-rocket, .home-container #profiles .fa-shield-alt {
+      font-size: 4em;
+      clear: both;
+      padding-bottom: 20px;
+      margin: 0 auto; }
 
 #bottom-stars {
-  padding-top: 150px; }
+  padding-top: 150px;
+  clear: both; }
+
+.gen-container {
+  margin: 0 auto;
+  max-width: 1420px;
+  overflow: hidden;
+  clear: both; }
+
+.movie-box {
+  float: left;
+  margin-left: 35px;
+  width: 200px;
+  margin-top: 25px; }
+  .movie-box img {
+    height: 270px;
+    width: 190px; }
+  .movie-box h2 {
+    color: #1587AC;
+    font-size: 14px;
+    text-align: left;
+    padding: 5px;
+    text-transform: uppercase;
+    margin-bottom: 0px; }
+  .movie-box h3 {
+    color: #1587AC;
+    padding: 5px;
+    margin: 0;
+    font-size: 13px;
+    text-align: left; }
+  .movie-box h4 {
+    padding: 5px;
+    margin: 0;
+    font-size: 13px;
+    text-align: left; }
+  .movie-box p {
+    font-family: 'Quicksand';
+    font-size: 10px;
+    padding: 5px; }
+  .movie-box .fa-star {
+    font-size: 0.8em;
+    margin-right: 5px;
+    padding: 0; }
+  .movie-box .year {
+    color: white;
+    font-size: 11px;
+    float: right;
+    padding-right: 10px; }
 
 /*# sourceMappingURL=main.css.map */
