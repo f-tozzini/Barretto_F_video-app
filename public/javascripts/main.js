@@ -26,7 +26,7 @@ function getMovieData(){
     });
   })
   .catch(function(error) {
-    console.log(error);
+    // console.log(error);
   });
 }
 getMovieData.call();
@@ -60,7 +60,7 @@ function getMusicData(){
     });
   })
   .catch(function(error) {
-    console.log(error);
+    // console.log(error);
   });
 }
 getMusicData.call();
@@ -91,7 +91,7 @@ function getKidsMovieData(){
     });
   })
   .catch(function(error) {
-    console.log(error);
+    // console.log(error);
   });
 }
 getKidsMovieData.call();
@@ -125,9 +125,16 @@ function getKidsMusicData(){
     });
   })
   .catch(function(error) {
-    console.log(error);
+    // console.log(error);
   });
 }
 getKidsMusicData.call();
+
+// //lightbox
+//
+// var lightbox = document.querySelector('.lightbox');
+// var lightboxTrigger = document.querySelectorAll('.trigger');
+// var lightboxClose = document.querySelector('.close-lightbox');
+
 
 })();

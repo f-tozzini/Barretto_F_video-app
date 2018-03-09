@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 08, 2018 at 07:13 PM
+-- Generation Time: Mar 09, 2018 at 06:35 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.6
 
@@ -43,7 +43,7 @@ CREATE TABLE `tbl_movies` (
 --
 
 INSERT INTO `tbl_movies` (`movies_id`, `movies_title`, `movies_thumbs`, `movies_video`, `movies_desc`, `movies_genre`, `movies_year`, `movies_rating`, `movies_classification`) VALUES
-(1, 'Beauty and the Beast', 'beauty-beast.jpg', 'beauty-beast.mov', 'An adaptation of the fairy tale about a monstrous-looking prince and a young woman who fall in love.', 'Drama', '2017', '73', 'Kids'),
+(1, 'Beauty and the Beast', 'beauty-beast.jpg', 'beauty-beast.mp4', 'An adaptation of the fairy tale about a monstrous-looking prince and a young woman who fall in love.', 'Drama', '2017', '73', 'Kids'),
 (2, 'Dark knight', 'batman.jpg', 'batman.mp4', 'When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham, the Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.', 'Action', '2008', '82', 'Adult'),
 (3, 'Wanted', 'wanted.jpg', 'wanted.mp4', 'A frustrated office worker learns that he is the son of a professional assassin and that he shares his father\'s superhuman killing abilities.', 'Action', '2008', '67', 'Adult'),
 (4, 'The avengers', 'avengers.jpg', 'avengers.mp4', 'Earth\'s mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.', 'Action', '2012', '81', 'Adult'),
@@ -86,10 +86,12 @@ INSERT INTO `tbl_music` (`music_id`, `music_band`, `music_title`, `music_thumbs`
 (4, 'The Killers', 'Mr. Brightside', 'the-killers.jpg', 'Indie Rock', '2004', 'Adults', 'the-killers.mp3'),
 (5, 'American Authors', 'Best Day of my Life', 'american-authors.jpg', 'Indie Rock', '2014', 'Adults', 'american-authors.mp3'),
 (6, 'Pink', 'Who Knew', 'pink.jpg', 'Pop', '2006', 'Adults', 'pink.mp3'),
-(7, 'Beauty and the beast', 'Beauty and the beast', 'beauty-beast-music.jpg', 'Disney', '1994', 'Kids', 'beauty-beast-music.mp3'),
-(8, 'Aladdin', 'Aladdin', 'aladdin.jpg', 'Disney', '1992', 'Kids', 'aladdin.mp3'),
-(9, 'Little Mermaid', 'Little Mermaid', 'little-mermaid.jpg', 'Disney', '1989', 'Kids', 'little-mermaid.mp3'),
-(10, 'Hercules', 'Hercules', 'hercules.jpg', 'Disney', '1997', 'Kids', 'hercules.mp3');
+(7, 'Beauty and the beast', 'Beauty and the Beast Soundtrack', 'beauty-beast-music.jpg', 'Disney', '1994', 'Kids', 'beauty-beast-music.mp3'),
+(8, 'Aladdin', 'Aladdin Soundtrack', 'aladdin.jpg', 'Disney', '1992', 'Kids', 'aladdin.mp3'),
+(9, 'The Little Mermaid', 'The Little Mermaid Soundtrack', 'little-mermaid.jpg', 'Disney', '1989', 'Kids', 'little-mermaid.mp3'),
+(10, 'Hercules', 'Hercules Soundtrack', 'hercules.jpg', 'Disney', '1997', 'Kids', 'hercules.mp3'),
+(11, 'Moana', 'Moana Soundtrack', 'moana.jpg', 'Disney', '2016', 'Kids', 'moana.mp3'),
+(12, 'Frozen', 'Frozen Soundtrack', 'frozen-music.jpg', 'Disney', '2013', 'Kids', 'frozen.mp3');
 
 --
 -- Indexes for dumped tables
@@ -120,7 +122,7 @@ ALTER TABLE `tbl_movies`
 -- AUTO_INCREMENT for table `tbl_music`
 --
 ALTER TABLE `tbl_music`
-  MODIFY `music_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `music_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
