@@ -9,7 +9,8 @@ var xhb = require('express-handlebars');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var movies = require('./routes/getData');
+var api = require('./routes/api');
+// var movies = require('./routes/getData');
 
 var app = express();
 
@@ -30,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //routes used
 app.use('/', require('./routes/index'));
 app.use('/users',require('./routes/users'));
-app.use('/getData',require('./routes/getData'));
+// app.use('/getData',require('./routes/getData'));
 app.use('/api',require('./routes/api'));
 
 // catch 404 and forward to error handler

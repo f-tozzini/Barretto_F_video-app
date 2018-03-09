@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 07, 2018 at 03:55 AM
+-- Generation Time: Mar 08, 2018 at 07:13 PM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.6
 
@@ -53,10 +53,43 @@ INSERT INTO `tbl_movies` (`movies_id`, `movies_title`, `movies_thumbs`, `movies_
 (8, 'Frozen', 'frozen.jpg', 'frozen.mp4', 'When the newly-crowned Queen Elsa accidentally uses her power to turn things into ice to curse her home in infinite winter, her sister Anna teams up with a mountain man, his playful reindeer, and a snowman to change the weather condition.', 'Animation', '2013', '75', 'Kids'),
 (9, 'Mulan', 'mulan.jpg', 'mulan.mp4', 'To save her father from death in the army, a young maiden secretly goes in his place and becomes one of China\'s greatest heroines in the process.', 'Animation', '1998', '76', 'Kids'),
 (10, 'Toy Story', 'toy-story.jpg', 'toy-story.mp4', 'A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy\'s room.', 'Animation', '2003', '81', 'Kids'),
-(11, 'Gilmore Girls', 'gimore-girls.jpg', 'gimore-girls.mp4', 'A dramedy centering around the relationship between a thirtysomething single mother and her teen daughter living in Stars Hollow, Connecticut.', 'TV Show', '2000-2007', '81', 'Adult'),
+(11, 'Gilmore Girls', 'gilmore-girls.jpg', 'gilmore-girls.mp4', 'A dramedy centering around the relationship between a thirtysomething single mother and her teen daughter living in Stars Hollow, Connecticut.', 'TV Show', '2000-2007', '81', 'Adult'),
 (12, 'One Tree Hill', 'one-tree-hill.jpg', 'one-tree-hill.mp4', 'Half-brothers Lucas and Nathan Scott trade between kinship and rivalry both on the basketball court and in the hearts of their friends in the small, but not so quiet town of Tree Hill, North Carolina.', 'TV Show', '2003-2012', '77', 'Adult'),
 (13, 'Outlander', 'outlander.jpg', 'outlander.mp4', 'An English combat nurse from 1945 is mysteriously swept back in time to 1743.', 'TV Show', '2014-2018', '85', 'Adult'),
 (14, 'Finding Nemo', 'finding-nemo.jpg', 'finding-nemo.mp4', 'After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.', 'Animation', '2003', '81', 'Kids');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_music`
+--
+
+CREATE TABLE `tbl_music` (
+  `music_id` smallint(5) UNSIGNED NOT NULL,
+  `music_band` varchar(50) NOT NULL,
+  `music_title` varchar(100) NOT NULL,
+  `music_thumbs` varchar(200) NOT NULL,
+  `music_genre` varchar(20) NOT NULL,
+  `music_year` varchar(10) NOT NULL,
+  `music_classification` varchar(50) NOT NULL,
+  `music_audio` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_music`
+--
+
+INSERT INTO `tbl_music` (`music_id`, `music_band`, `music_title`, `music_thumbs`, `music_genre`, `music_year`, `music_classification`, `music_audio`) VALUES
+(1, 'Foo Fighters', 'These Days', 'foo-fighters.jpg', 'Rock', '2011', 'Adults', 'foo-fighters.mp3'),
+(2, 'AC/DC', 'Hells Bells', 'acdc.jpg', 'Rock', '1980', 'Adults', 'acdc.mp3'),
+(3, 'Florence and the Machine ', 'Cosmic Love', 'florence.jpg', 'Indie Rock', '2009', 'Adults', 'florence.mp3'),
+(4, 'The Killers', 'Mr. Brightside', 'the-killers.jpg', 'Indie Rock', '2004', 'Adults', 'the-killers.mp3'),
+(5, 'American Authors', 'Best Day of my Life', 'american-authors.jpg', 'Indie Rock', '2014', 'Adults', 'american-authors.mp3'),
+(6, 'Pink', 'Who Knew', 'pink.jpg', 'Pop', '2006', 'Adults', 'pink.mp3'),
+(7, 'Beauty and the beast', 'Beauty and the beast', 'beauty-beast-music.jpg', 'Disney', '1994', 'Kids', 'beauty-beast-music.mp3'),
+(8, 'Aladdin', 'Aladdin', 'aladdin.jpg', 'Disney', '1992', 'Kids', 'aladdin.mp3'),
+(9, 'Little Mermaid', 'Little Mermaid', 'little-mermaid.jpg', 'Disney', '1989', 'Kids', 'little-mermaid.mp3'),
+(10, 'Hercules', 'Hercules', 'hercules.jpg', 'Disney', '1997', 'Kids', 'hercules.mp3');
 
 --
 -- Indexes for dumped tables
@@ -69,6 +102,12 @@ ALTER TABLE `tbl_movies`
   ADD PRIMARY KEY (`movies_id`);
 
 --
+-- Indexes for table `tbl_music`
+--
+ALTER TABLE `tbl_music`
+  ADD PRIMARY KEY (`music_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -77,6 +116,11 @@ ALTER TABLE `tbl_movies`
 --
 ALTER TABLE `tbl_movies`
   MODIFY `movies_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT for table `tbl_music`
+--
+ALTER TABLE `tbl_music`
+  MODIFY `music_id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

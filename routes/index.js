@@ -39,4 +39,9 @@ router.get('/kids', (req, res) => {
   })
 });
 
+router.get('/api', (req, res) => {
+  console.log('hit api');
+  res.render('kids','adults');
+});
+
 module.exports = router;
