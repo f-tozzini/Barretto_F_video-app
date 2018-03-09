@@ -1,5 +1,9 @@
 body {
-  background-color: #f1950b; }
+  background-color: #00334d; }
+
+#kids-button {
+  float: right;
+  margin-top: -300px; }
 
 #header-img {
   margin-left: -1%;
